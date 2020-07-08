@@ -1,0 +1,32 @@
+---
+title: "Untitled"
+author: "Oswaldo Felix"
+date: "7/7/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(GGally)
+#library(palmerpenguins) # Not on cran yet
+library(skimr)
+```
+
+```{r}
+# This is pretty over-powered
+skimr::skim(iris)
+```
+
+```{r}
+# Holy cow this is even more powerful
+wow <-iris %>%
+  ggpairs(aes(color = Species))
+
+ggsave("wow.png", width = 10, height  = 10)
+
+```
+
