@@ -26,7 +26,7 @@ skimr::skim(iris)
 wow <-iris %>%
   ggpairs(aes(color = Species))
 
-ggsave("wow.png", width = 10, height  = 10)
+ggsave(plot = wow, "wow.png", width = 10, height  = 10)
 
 ```
 
