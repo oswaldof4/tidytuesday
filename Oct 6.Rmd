@@ -1,0 +1,34 @@
+---
+title: "Untitled"
+author: "Oswaldo Felix"
+date: "10/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Function shortcut -> highlight ctrl + alt + x
+```{r}
+math <- function(something, another) {
+  something + another / something
+}
+
+dogtreats <- function(teddy, greg) {
+  teddy + 8.1 * greg / (teddy-greg)
+}
+
+dogtreats(teddy = 5, greg = 4)
+```
+
+## Broom!!
+```{r}
+summary()
+tidy()
+glance()
+
+
+```
+
